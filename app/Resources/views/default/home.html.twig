@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	{% for name in names %}
+		<div id="{{name.id}}" class="names">
+			<div id="inner{{name.id}}">test</div>
+			{{name.prenom}}</div><br>
+
+	{% endfor %}
+{% endblock %}
